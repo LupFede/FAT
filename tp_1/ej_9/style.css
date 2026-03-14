@@ -1,0 +1,29 @@
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    color: red;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+}
+
+#thirdDiv {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    border: solid 1px black;
+}

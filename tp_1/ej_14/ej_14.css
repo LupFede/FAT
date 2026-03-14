@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222222;
+}
+
+.slider-container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.slider-container .slider-viewport {
+    width: 100%;
+    border-radius: 14px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    scroll-snap-type: proximity;
+    -webkit-overflow-scrolling: auto;
+}
+
+.slider-container .slide {
+    min-width: 100%;
+    height: 400px;
+    scroll-snap-align: initial;
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.slider-container .slide:nth-child(1) {
+    background-color: blue;
+}
+
+.slider-container .slide:nth-child(2) {
+    background-color: green;
+}
+
+.slider-container .slide:nth-child(3) {
+    background-color: brown;
+}
+
+.slider-container .slide:nth-child(4) {
+    background-color: orange;
+}
+
+.slider-container .links {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.slider-container .links a {
+    width: 50px;
+    height: 50px;
+    background-color: #2e2e2e;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.slider-container .links a:hover {
+    background-color: gray;
+}

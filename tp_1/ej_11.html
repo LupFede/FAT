@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LupFede ejercicio 11</title>
+
+</head>
+
+<body>
+    <header>Formulario de contacto</header>
+
+    <section class="container">
+        <form id="form" method="get" action="">
+            <div class="form-group">
+                <span>Nombre</span>
+                <input type="text" placeholder="Federico" name="Nombre" required maxlength="40">
+            </div>
+            <div class="form-group">
+                <span>Apellidos</span>
+                <input type="text" placeholder="Lupiañez" required maxlength="40">
+            </div>
+            <div class="form-group">
+                <span>Sexo</span>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">hombre</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="male">mujer</label><br>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" checked>
+                <span>Deseo recibir información sobre novedades y ofertas</span>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" required>
+                <span>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre la
+                    protección de datos</span>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+
+</html>
+
+<style>
+    :root {
+        background-color: #F5AF96;
+    }
+
+    header {
+        border: solid 2px black;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .container {
+        width: 60%;
+        border-radius: 15px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    form {
+        background-color: #F8875F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    form input[type="submit"] {
+        width: 15%;
+        align-self: center;
+    }
+
+    .form-group {
+        margin: 1rem;
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    form input {
+        background-color: white;
+        border: solid 1px gray;
+        margin: 0;
+    }
+</style>
