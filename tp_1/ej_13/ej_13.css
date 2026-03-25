@@ -135,3 +135,7 @@ body {
     justify-content: space-evenly;
     flex-direction: row-reverse;
 }
+
+#ejercicioCinco img {
+    height: 100%;
+}
